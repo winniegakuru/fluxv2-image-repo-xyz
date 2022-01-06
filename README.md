@@ -26,8 +26,9 @@ official support on that from:
 ### Environment setup:
  ### Kubernetes Cluster
  <p> To try it out on your local machine
-  > I will recommend https://kind.sigs.k8s.io/docs/user/quick-start/ Kubernetes kind.( Although it can be a bit frustrating if your local env is not compartible)
-  #### For my windows distribution,
+ > I will recommend Kubernetes kind (https://kind.sigs.k8s.io/docs/user/quick-start/).
+  <p> Although it can be a bit frustrating if your local env is not compartible
+ #### For my windows distribution,
   <p> ```go install sigs.k8s.io/kind@v0.11.1 ``` command worked for me!!!
  
   ![image](https://user-images.githubusercontent.com/17796294/146667928-85b705b0-25b4-47d0-b1cf-1b3f2e9a8a97.png)
@@ -56,13 +57,13 @@ official support on that from:
 
  ```Choco install flux```
  
- ### GIT Repo
+### GIT Repo
   <p> Fluxcd works very well with most of the common git providers: 
   <p> Follow the guide as per your provider : https://fluxcd.io/docs/installation/
  > I will demo using both Gitlab and Github git providers since there is no much changes
-  ##### GitHub 
+##### GitHub 
    ```flux bootstrap github --components-extra=image-reflector-controller,image-automation-controller --owner=<git username eg winniegakuru> --repository=fluxv2-image-repo1   --branch=main   --path=clusters/my-cluster  --read-write-key   --personal```
-  ##### Gitlab
+##### Gitlab
     ```flux bootstrap gitlab --components-extra=image-reflector-controller,image-automation-controller --owner=fluxcd2  --repository=Fluxcdv2   --branch=master   --path=clusters/my-cluster   --token-auth --personal```
     
     > The above commands (depending on your provider) will install FluxCd toolkit including automatic image sync pod, deploy read/write key, and commit it to the specified branch.
