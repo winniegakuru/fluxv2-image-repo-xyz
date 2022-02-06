@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: podinfod
-          image: 596973367895.dkr.ecr.us-east-2.amazonaws.com/onyxhawk:latest # {"$imagepolicy": "flux-system:podinfo"}
+          image: 596973367895.dkr.ecr.us-east-2.amazonaws.com/onyxhawk:5.0.3 # {"$imagepolicy": "flux-system:podinfo"}
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
