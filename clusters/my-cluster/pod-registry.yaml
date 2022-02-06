@@ -4,5 +4,7 @@ metadata:
   name: podinfo
   namespace: flux-system
 spec:
-  image: ghcr.io/stefanprodan/podinfo
+#596973367895.dkr.ecr.us-east-2.amazonaws.com/onyxhawk
+#  image: ghcr.io/stefanprodan/podinfo
+  image: 596973367895.dkr.ecr.us-east-2.amazonaws.com/onyxhawk
   interval: 1m0s
