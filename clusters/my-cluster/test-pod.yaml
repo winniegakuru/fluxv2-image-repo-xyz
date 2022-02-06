@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: winnie-pod
+  name: winnie-pod2
   namespace: flux-system
 spec:
   selector:
