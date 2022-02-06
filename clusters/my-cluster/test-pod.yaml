@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: winnie-pod2
+  name: winnie-pod
   namespace: flux-system
 spec:
   selector:
@@ -14,9 +14,10 @@ spec:
     spec:
       containers:
         - name: podinfod
-          image: ghcr.io/stefanprodan/podinfo:5.0.3 # {"$imagepolicy": "flux-system:podinfo"}
+          image: 596973367895.dkr.ecr.us-east-2.amazonaws.com/onyxhawk:latest # {"$imagepolicy": "flux-system:podinfo"}
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
               containerPort: 9890
               protocol: TCP
+#i-02c6fe7ba1ae75bb2 - EC2 ID
