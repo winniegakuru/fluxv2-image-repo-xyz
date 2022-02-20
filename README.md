@@ -108,7 +108,7 @@ spec:
       branch: main
   update:
     path: ./clusters/my-cluster
-    strategy: Setters```
+    strategy: Setters ```
  
     <p> --- flux-system-automation.yaml
     
@@ -122,7 +122,7 @@ spec:
     name: podinfo
   policy:
     semver:
-      range: 5.0.x```
+      range: 5.0.x ```
      
 --- pod-policy.yaml
 
@@ -133,7 +133,7 @@ metadata:
   namespace: flux-system
 spec:
   image: ghcr.io/stefanprodan/podinfo
-  interval: 1m0s```
+  interval: 1m0s ```
  <p>--- pod-registry.yaml
 
 #### Conclussion
